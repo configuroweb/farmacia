@@ -59,19 +59,6 @@
                      <!-- <li><a href="report.php" href="#" aria-expanded="false"><i class="fa fa-print"></i><span class="hide-menu">Reports</span></a></li> -->
 
 
-
-
-
-
-                     <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-flag"></i><span class="hide-menu">Reportes</span></a>
-                         <ul aria-expanded="false" class="collapse">
-
-                             <!-- <li><a href="report.php">Order Report</a></li> -->
-                             <li><a href="sales_report.php">Reporte de Ventas</a></li>
-                             <li><a href="productreport.php">Reporte Productos</a></li>
-                             <li><a href="expreport.php">Reporte Productos Expirados</a></li>
-                         </ul>
-                     </li>
                  <?php } ?>
 
 

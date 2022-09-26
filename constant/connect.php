@@ -2,7 +2,7 @@
 // DB credentials.
 $localhost = "localhost";
 $username = "root";
-$password = "";
+$password = "123abc";
 $dbname = "farmacia";
 //$store_url = "http://localhost/phpinventory/";
 // db connection

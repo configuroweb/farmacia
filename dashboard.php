@@ -48,6 +48,87 @@ $countLowStock2 = $lowStockQuery2->num_rows;
 
 
     <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-6 dashboard">
+                <div class="card" style="background: #eb8038 ">
+                    <div class="media widget-ten">
+                        <div class="media-left meida media-middle">
+                            <span><i class="ti-support"></i></span>
+                        </div>
+                        <div class="media-body media-text-right">
+
+
+                            <h2 class="color-white"><?php echo $countLowStock; ?></h2>
+                            <a href="product.php">
+                                <p class="m-b-0">Medicinas</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
+                <div class="col-md-6 dashboard">
+                    <div class="card" style="    background-color: #f05746 ">
+                        <div class="media widget-ten">
+                            <div class="media-left meida media-middle">
+                                <span><i class="ti-agenda"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+
+                                <h2 class="color-white"><?php echo $countLowStock3; ?></h2>
+                                <a href="product.php">
+                                    <p class="m-b-0">Medicinas Vencidas</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
+                <div class="col-md-6 dashboard">
+                    <div class="card " style="    background-color: #46f9a0 ">
+                        <div class="media widget-ten">
+                            <div class="media-left meida media-middle">
+                                <span><i class="ti-notepad"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+
+                                <h2 class="color-white"><?php echo $countLowStock2; ?></h2>
+                                <a href="Order.php">
+                                    <p class="m-b-0">Facturas</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+
+            <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
+                <div class="col-md-6 dashboard">
+                    <div class="card" style="background:#65c8db ">
+                        <div class="media widget-ten">
+                            <div class="media-left meida media-middle">
+                                <span><i class="ti-rss"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+
+
+
+
+                                <h2 class="color-white"><?php echo $countLowStock1; ?></h2>
+                                <a href="brand.php">
+                                    <p class="m-b-0">Proveedores</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+
+
+
+
+        </div>
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -111,88 +192,6 @@ $countLowStock2 = $lowStockQuery2->num_rows;
 
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 dashboard">
-                <div class="card" style="background: #eb8038 ">
-                    <div class="media widget-ten">
-                        <div class="media-left meida media-middle">
-                            <span><i class="ti-support"></i></span>
-                        </div>
-                        <div class="media-body media-text-right">
-
-
-                            <h2 class="color-white"><?php echo $countLowStock; ?></h2>
-                            <a href="product.php">
-                                <p class="m-b-0">Medicinas</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
-                <div class="col-md-6 dashboard">
-                    <div class="card" style="    background-color: #f05746 ">
-                        <div class="media widget-ten">
-                            <div class="media-left meida media-middle">
-                                <span><i class="ti-agenda"></i></span>
-                            </div>
-                            <div class="media-body media-text-right">
-
-                                <h2 class="color-white"><?php echo $countLowStock3; ?></h2>
-                                <a href="Order.php">
-                                    <p class="m-b-0">Medicinas Vencidas</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php } ?>
-            <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
-                <div class="col-md-6 dashboard">
-                    <div class="card " style="    background-color: #46f9a0 ">
-                        <div class="media widget-ten">
-                            <div class="media-left meida media-middle">
-                                <span><i class="ti-notepad"></i></span>
-                            </div>
-                            <div class="media-body media-text-right">
-
-                                <h2 class="color-white"><?php echo $countLowStock2; ?></h2>
-                                <a href="Order.php">
-                                    <p class="m-b-0">Facturas</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php } ?>
-
-            <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
-                <div class="col-md-6 dashboard">
-                    <div class="card" style="background:#65c8db ">
-                        <div class="media widget-ten">
-                            <div class="media-left meida media-middle">
-                                <span><i class="ti-rss"></i></span>
-                            </div>
-                            <div class="media-body media-text-right">
-
-
-
-
-                                <h2 class="color-white"><?php echo $countLowStock1; ?></h2>
-                                <a href="product.php">
-                                    <p class="m-b-0">Proveedores</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php } ?>
-
-
-
-
-        </div>
-
 
         <?php
         //error_reporting(0);
